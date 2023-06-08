@@ -1,0 +1,3 @@
+# clean
+# redable
+# predictible

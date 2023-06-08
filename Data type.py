@@ -342,3 +342,65 @@ for item in user.keys():
 
 # interables - an object or colection that can be interated - list, dictionary, tuple, set, str
 # intareted - one by one to check each item in the collection
+
+# counter exercise
+
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# counter = 0
+# for item in my_list:
+#     counter = counter + item
+
+# print(counter)
+
+# # range function - start, stop, step
+# for _ in range(2):
+#     print(list(range(10)))
+# print(range(100))
+
+
+# enumerate function
+# print(i, char)
+# for i, char in enumerate(list(range(100))):
+#     print(i, char)
+#     if char == 50:
+#         print(f"index of 50 is: {i}")
+
+# while loop
+# i = 0
+# while i < 50:
+#     print(i)
+#     i += 1
+# else:
+#     print("done with all the work")
+
+# while loop exercise
+# my_list = [1, 2, 3]
+# for item in my_list:
+#     print(item)
+
+# i = 0
+# while i < len(my_list):
+#     print(my_list[i])
+#     i += 1
+# else:
+#     print("end of list")
+
+# while True:
+#     response = input("say something: ")
+#     if response == "bye":
+#         break
+
+# brake, continue, pass
+my_list = [1, 2, 3]
+for item in my_list:
+    pass
+    print(item)
+
+i = 0
+while i < len(my_list):
+    print(my_list[i])
+    i += 1
+    pass
+
+# our first GUI
+# next file
