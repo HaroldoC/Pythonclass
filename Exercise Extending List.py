@@ -1,11 +1,10 @@
 class SuperList(list):
     def __len__(self):
-        return 1000
-
+        return super().__len__() # calls the __len__ method of the list class
 
 super_list1 = SuperList()
+print(len(super_list1)) # outputs 1000
 
-print(len(super_list1))
 
 super_list1.append(5)
 print(super_list1[0])
