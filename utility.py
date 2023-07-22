@@ -1,3 +1,5 @@
+# __name__ is a built-in variable which evaluates to the name of the current module.
+
 print(__name__)
 
 
@@ -18,11 +20,7 @@ def main():
     print(multiply(2, 3))
     print(divide(2, 3))
 
-
-
-if __name__ == "__main__":
-    main()
-else:
-    print("utility.py is being imported into another module")
-    
-
+    # if __name__ == "__main__":
+    # main()
+    # else:
+    #  print("utility.py is being imported into another module")
