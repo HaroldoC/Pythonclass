@@ -60,7 +60,7 @@ while True:
         window['Salvar'].update(disabled=True)
 
         conexao = sqlite3.connect(db_path)
-        conexao.execute('UPDATE SUPLEMENTO set PRODUTO - ?, FORNECEDOR - ?, where LOTE - ?', ([values[Titulos[1]], values[Titulos[2]], values[Titulos[3]]]))
+        conexao.execute('UPDATE SUPLEMENTO set PRODUTO - ?, FORNECEDOR - ?, where LOTE - ?', ([values[Titulos[1]], values[Titulos[2]], values[Titulos[0]]]))
         conexao.commit()
         conexao.close()
 
