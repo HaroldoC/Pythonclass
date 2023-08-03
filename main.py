@@ -1,7 +1,8 @@
-from utility import multiply, divide
-from shopping.shopping_cart import buy
-
-print(buy("apple"))
-print(multiply(2, 3))
-print(divide(2, 3))
-print(max())
+def do_stuff(num=0):
+    try:
+        if num:
+            return int(num) + 5
+        else:
+            return "please enter number"
+    except ValueError as err:
+        return err
