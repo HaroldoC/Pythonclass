@@ -12,26 +12,26 @@
 
 # print(message.sid)
 
+
+# Sending SMS using Ntfy API
 import requests
 
 requests.post(
     "https://ntfy.sh/mytopic", data="Backup successful 😀".encode(encoding="utf-8")
 )
 
-# import requests
+requests.post(
+    "https://ntfy.sh/mydoorbell",
+    data="""There's someone at the door. 🐶
 
-# requests.post(
-#     "https://ntfy.sh/mydoorbell",
-#     data="""There's someone at the door. 🐶
-
-# Please check if it's a good boy or a hooman.
-# Doggies have been known to ring the doorbell.""".encode(
-#         "utf-8"
-#     ),
-#     headers={
-#         "Click": "https://home.nest.com/",
-#         "Attach": "https://nest.com/view/yAxkasd.jpg",
-#         "Actions": "http, Open door, https://api.nest.com/open/yAxkasd, clear=true",
-#         "Email": "phil@example.com",
-#     },
-# )
+Please check if it's a good boy or a hooman.
+Doggies have been known to ring the doorbell.""".encode(
+        "utf-8"
+    ),
+    headers={
+        "Click": "https://home.nest.com/",
+        "Attach": "https://nest.com/view/yAxkasd.jpg",
+        "Actions": "http, Open door, https://api.nest.com/open/yAxkasd, clear=true",
+        "Email": "phil@example.com",
+    },
+)

@@ -31,10 +31,10 @@ for tweet in tweepy.Cursor(api.search, search).items(numberOfTweets):
     try:
         tweet.favorite()
         print("I liked that tweet")
-    # except tweepy.TweepError as e:
-    #     print(e.reason)
-    # except StopIteration:
-    #     break
+    except tweepy.TweepError as e:
+        print(e.reason)
+    except StopIteration:
+        break
 
 
 # generous bot
